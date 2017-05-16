@@ -1,0 +1,77 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block title %}Persianas - Inicio{% endblock %}</title>
+
+{% block header %}
+{{ block.super }}
+<div class="page-cover">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="small-8 medium-5 medium-offset-2 large-offset-2 end columns">
+        <h1 class="hero-main-header">Persianas</h1>
+        <h2 class="hero-subheader">Venta, reparación y mantenimiento</h2>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section id="services">
+  <div class="row">
+    <article class="large-12 columns">
+      <header>
+        <h1>Te presentamos nuestros servicios</h1>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
+        massa augue. Nunc quis egestas turpis, ac feugiat magna. Vivamus
+        ultricies volutpat odio quis semper. Sed in velit eu dui luctus
+        tristique volutpat nec ex. Ut auctor dictum metus nec tincidunt. Duis
+        ullamcorper bibendum neque ac venenatis. Cras pretium vel erat sed
+        suscipit. Praesent porttitor risus finibus mauris tristique sodales.
+        Aenean lacinia, ipsum eget dignissim tincidunt, urna metus lobortis
+        ante, ut vestibulum tellus neque nec velit.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <div class="small-12 medium-4 columns">
+      <h2>Venta</h2>
+      <img src="{% static 'images/sale-tag.png' %}" alt="">
+    </div>
+    <div class="small-12 medium-4 columns">
+      <h2>Reparación</h2>
+      <img src="{% static 'images/drill.png' %}" alt="">
+    </div>
+    <div class="small-12 medium-4 columns">
+      <h2>Instalación</h2>
+      <img src="{% static 'images/drill.png' %}" alt="">
+    </div>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="row">
+    <article class="large-12 columns">
+      <header>
+        <h1>¿A donde queremos llegar?</h1>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
+        massa augue. Nunc quis egestas turpis, ac feugiat magna. Vivamus
+        ultricies volutpat odio quis semper. Sed in velit eu dui luctus
+        tristique volutpat nec ex. Ut auctor dictum metus nec tincidunt. Duis
+        ullamcorper bibendum neque ac venenatis. Cras pretium vel erat sed
+        suscipit. Praesent porttitor risus finibus mauris tristique sodales.
+        Aenean lacinia, ipsum eget dignissim tincidunt, urna metus lobortis
+        ante, ut vestibulum tellus neque nec velit.
+      </p>
+    </article>
+  </div>
+</section>
+{% endblock %}

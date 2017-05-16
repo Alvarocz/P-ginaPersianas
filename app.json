@@ -1,0 +1,8 @@
+{
+  "name": "Persianas",
+  "description": "Página de presentación de Persianas - Camilo Cataño",
+  "image": "heroku/python",
+  "repository": "https://github.com/Alvarocz/PaginaPersianas",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}

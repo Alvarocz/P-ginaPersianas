@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alvaro Carmona">
+  <meta name="keywords" content="venta, reparación, mantenimiento, persianas, Medellín, Camilo Cataño">
+  <meta name="description" content="Esta es la página de presentación de
+    Persianas, micro-empresa que presta servicio de limpieza, venta e
+    instalación de persianas y cortinas liderada por Camilo Andres Cataño en
+    Medellín, Antioquia.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}Persianas{% endblock %}</title>
+
+  {% block stylesheets %}
+  <link rel="stylesheet" href="{% static 'stylesheets/foundation.min.css' %}">
+  <link rel="stylesheet" href="{% static 'stylesheets/social_foundicons.css' %}">
+  <link rel="stylesheet" href="{% static 'stylesheets/app.css' %}">
+  {% endblock %}
+</head>
+<body>
+  <header>
+    {% block header %}
+    <nav>
+      <div class="top-bar stacked-for-medium">
+        <div class="top-bar-left">
+          <ul class="menu" data-dropdown-menu>
+            <li class="menu-text"><a href="{% url 'index' %}">Persianas</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="{% url 'galeria' %}">Galería</a></li>
+            <li><a href="#">Otra cosa</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock %}
+  </header>
+
+  {% block content %}
+  {% endblock %}
+  <footer>
+    {% block footer %}
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <div class="clearfix"></div>
+        <h1>Contactanos</h1>
+        <button class="button social facebook small-6 columns">
+          <i class="foundicon-facebook"></i> Facebook
+        </button>
+        <button class="button social twitter small-6 columns">
+          <i class="foundicon-twitter"></i> Twitter
+        </button>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <h1>Términos y condiciones</h1>
+        <p>
+          Este sitio expone información sobre Persianas. Cualquier
+          inquietud ha de ser notificada por medio de llamada telefonica, correo
+          electrónico o red social. No se hacen reservaciones y no se da
+          información personal alguna. Por favor utilizar el sitio con
+          discresión.
+        </p>
+      </div>
+    </div>
+    {% endblock %}
+  </footer>
+  <div id="foot-bar">
+    <div class="foot-bar">
+      <div class="foot-bar-right">
+        <span>Alvaro Carmona 2017. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </div>
+  {% block javascript %}
+  <script src="{% static 'js/vendor/jquery.js' %}"></script>
+  <script src="{% static 'js/vendor/what-input.js' %}"></script>
+  <script src="{% static 'js/vendor/foundation.js' %}"></script>
+  <script src="{% static 'js/app.js' %}"></script>
+  {% endblock %}
+</body>
+</html>

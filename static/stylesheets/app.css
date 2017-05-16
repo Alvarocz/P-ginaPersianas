@@ -1,0 +1,88 @@
+/* General layout and colors */
+.top-bar {
+  background: #2F2F2F;
+  color: #F5F6F7;
+  font-weight: bold;
+}
+.top-bar ul {
+  background: transparent;
+}
+.top-bar ul li a {
+  color: #DFDFDF;
+}
+.top-bar ul li a:hover {
+  color: #FFB888;
+}
+.page-cover {
+  background: url("http://ayt.mx/images/persianas/sheer-elegance.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 250px;
+  padding-top: 180px;
+}
+section {
+  padding-bottom: 140px;
+  padding-top: 140px;
+  text-align: center;
+}
+footer {
+  background: #67251a;
+  color: #F5F6F7;
+  padding-bottom: 110px;
+  padding-top: 110px;
+  text-align: center;
+}
+section p {
+  text-align: left;
+}
+p {
+  font-size: 1.2em;
+}
+img {
+	display: inline-block;
+	width: 50%;
+}
+#galeria img {
+  margin-bottom: 20px;
+  opacity: 0;
+  width: 95%;
+  transition: opacity .5s;
+}
+#galeria img:hover {
+  opacity: .5;
+}
+/* Foundation's social buttons */
+.social.facebook {
+  background-color: #3b5998;
+  color: #fefefe;
+}
+.social.facebook:hover, .social.facebook:focus {
+  background-color: #2f477a;
+  color: #fefefe;
+}
+.social.twitter {
+  background-color: #55acee;
+  color: #fefefe;
+}
+.social.twitter:hover, .social.twitter:focus {
+  background-color: #1a8fe8;
+  color: #fefefe;
+}
+/* Specific section styles */
+#services {
+	background-color: #5fbf54;
+}
+#vision {
+	background-color: #d6ccbf;
+}
+#foot-bar {
+  display: block;
+  background: #3A120B;
+  padding: 18px;
+}
+.foot-bar {
+  color: #af6c61;
+  font-size: 0.9em;
+  text-align: right;
+}
