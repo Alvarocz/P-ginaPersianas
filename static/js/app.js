@@ -28,6 +28,7 @@ $.getJSON('/imagenes', {}, function(data) {
     else if (items.length % 4 == 0) { num_cols = 2; }
     else if (items.length % 10 == 0) { num_cols = 5; }
     else { num_cols = items.length; }
+    console.log("Multiple of "+num_cols.toString());
     var new_col = $('<div class="col">');
     for (var j=0; j < items.length; j++) {
       new_col.append(items[j]);
