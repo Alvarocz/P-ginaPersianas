@@ -26,8 +26,7 @@ $.getJSON('/imagenes', {}, function(data) {
     var num_cols;
     if (items.length % 4 == 0) { num_cols = 2; }
     else if (items.length % 6 == 0) { num_cols = 3; }
-    else if (items.length % 10 == 0) { num_cols = 5; }
-    else { num_cols = items.length; }
+    else { num_cols = 5; }
     console.log(num_cols, items.length);
     var new_col = $('<div class="col">');
     for (var j=0; j < items.length; j++) {
@@ -39,7 +38,7 @@ $.getJSON('/imagenes', {}, function(data) {
       }
       i ++;
     }
-    console.log(new_col);
+    if (new_col.length > 0) { container.append(new_col); }
   }
   var images = $(".gallery-container img");
   for (var i=0; i < images.length; i++) {
