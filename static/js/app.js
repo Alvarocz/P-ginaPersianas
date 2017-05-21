@@ -23,7 +23,6 @@ $.getJSON('/imagenes', {}, function(data) {
     }
   } else {
     var mult = 0;
-    var c = 1; // Color index
     if (items.length % 3 == 0) { mult = 3; }
     else if (items.length % 5 == 0) { mult = 5; }
     else if (items.length % 2 == 0) { mult = 4; }
