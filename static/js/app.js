@@ -36,12 +36,10 @@ $.getJSON('/imagenes', {}, function(data) {
       }
     }
   }
+  var images = $(".gallery-container img");
+  setTimeout(function() {
+    for (var i=0; i < images.length; i++) {
+      images[i].style.opacity =  "1";
+    }
+  }, 400);
 });
-
-var img_container = document.querySelector("#galeria");
-var images = img_container.getElementsByTagName('img');
-setTimeout(function() {
-  for (var i=0; i < images.length; i++) {
-    images[i].style.opacity = "1";
-  }
-},250);
