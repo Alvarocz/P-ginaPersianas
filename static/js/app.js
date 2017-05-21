@@ -24,8 +24,8 @@ $.getJSON('/imagenes', {}, function(data) {
   } else {
     var mult = 0;
     if (items.length % 3 == 0) { mult = 3; }
-    else if (items.length % 5 == 0) { mult = 5; }
     else if (items.length % 2 == 0) { mult = 4; }
+    else if (items.length % 5 == 0) { mult = 5; }
     else { mult = 1; }
     var new_col = $('<div class="col">');
     for (var i=1; i <= items.length; i++) {
