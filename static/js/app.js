@@ -22,24 +22,27 @@ $.getJSON('/imagenes', {}, function(data) {
       container.append(new_col);
     }
   } else {
-    var mult = 0;
-    if (items.length % 3 == 0) { mult = 3; }
-    else if (items.length % 2 == 0) { mult = 4; }
-    else if (items.length % 5 == 0) { mult = 5; }
-    else { mult = 1; }
+    var i = 1;
+    var num_cols;
+    if (items.length % 6 == 0) { num_cols = 3; }
+    else if (items.length % 4 == 0) { num_cols = 2; }
+    else if (items.length % 10 == 0) { num_cols = 5; }
+    else { num_cols = items.length; }
     var new_col = $('<div class="col">');
-    for (var i=1; i <= items.length; i++) {
-      new_col.append(items[i-1]);
-      if (i % mult == 0) {
+    for (var j=0; j < items.length; j++) {
+      new_col.append(items[j]);
+      if (i == num_cols) {
         container.append(new_col);
         new_col = $('<div class="col">');
+        i = 0;
       }
+      i ++;
     }
   }
   var images = $(".gallery-container img");
-  setTimeout(function() {
-    for (var i=0; i < images.length; i++) {
-      images[i].style.opacity =  "1";
-    }
-  }, 400);
+  for (var i=0; i < images.length; i++) {
+    images[i].addEventListener("load", function(evt) {
+      evt.target.style.opacity = "1";
+    });
+  }
 });

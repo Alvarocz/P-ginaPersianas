@@ -44,10 +44,7 @@ p {
 }
 #galeria img {
   opacity: 0;
-  transition: opacity .5s;
-}
-#galeria img:hover {
-  opacity: .6;
+  transition: opacity .65s;
 }
 /* Smart gallery */
 img {
@@ -63,7 +60,7 @@ img {
   width: 100%;
 }
 .image-thumbnail .image-caption {
-  background: rgba(30, 30, 30, .6);
+  background: rgba(22, 22, 22, .75);
   display: none;
   color: #F5F6F7;
   line-height: 38px;
