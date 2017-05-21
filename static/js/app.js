@@ -31,7 +31,7 @@ $.getJSON('/imagenes', {}, function(data) {
     var new_col = $('<div class="col">');
     for (var j=0; j < items.length; j++) {
       new_col.append(items[j]);
-      if (i == num_cols) {
+      if (i == items.length/num_cols) {
         container.append(new_col);
         new_col = $('<div class="col">');
         i = 0;
