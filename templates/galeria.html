@@ -3,19 +3,7 @@
 
 {% block content %}
 <section id="galeria">
-  <div class="row">
-    {% if images %}
-      {% for image in images %}
-      <div class="small-12 medium-6 large-4 columns">
-        <div class="image-thumbnail">
-          <img src="{{image.url}}" alt="">
-          <div class="image-caption">{{image.nombre}}</div>
-        </div>
-      </div>
-      {% endfor %}
-    {% else %}
-      <p>Lo sentimos, aun no hemos publicado imágenes.</p>
-    {% endif %}
+  <div class="gallery-container">
   </div>
 </section>
 {% endblock %}

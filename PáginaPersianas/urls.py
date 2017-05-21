@@ -21,5 +21,6 @@ from home import views as homeviews
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', homeviews.index, name='index'),
+    url(r'^imagenes', homeviews.imagenes, name='imagenes'),
     url(r'^galeria/', homeviews.galeria, name='galeria'),
 ]
