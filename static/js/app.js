@@ -24,11 +24,11 @@ $.getJSON('/imagenes', {}, function(data) {
   } else {
     var i = 1;
     var num_cols;
-    if (items.length % 6 == 0) { num_cols = 3; }
-    else if (items.length % 4 == 0) { num_cols = 2; }
+    if (items.length % 4 == 0) { num_cols = 2; }
+    else if (items.length % 6 == 0) { num_cols = 3; }
     else if (items.length % 10 == 0) { num_cols = 5; }
     else { num_cols = items.length; }
-    console.log("Multiple of "+num_cols.toString());
+    console.log(num_cols, items.length);
     var new_col = $('<div class="col">');
     for (var j=0; j < items.length; j++) {
       new_col.append(items[j]);
@@ -39,6 +39,7 @@ $.getJSON('/imagenes', {}, function(data) {
       }
       i ++;
     }
+    console.log(new_col);
   }
   var images = $(".gallery-container img");
   for (var i=0; i < images.length; i++) {
