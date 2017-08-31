@@ -2,5 +2,6 @@
 staticfiles
 .env
 db.sqlite3
+mydb
 myenv
 local_settings.py

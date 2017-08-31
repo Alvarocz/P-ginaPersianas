@@ -1,17 +1,25 @@
 /* General layout and colors */
+
+a {
+	color: #F5F6F7;
+}
+
+a:hover {
+	color: #F5F6F7;
+}
+
 .top-bar {
-  background: #2F2F2F;
-  color: #F5F6F7;
+  background: #9ccbdf;
   font-weight: bold;
 }
 .top-bar ul {
   background: transparent;
 }
 .top-bar ul li a {
-  color: #DFDFDF;
+  color: #303030;
 }
 .top-bar ul li a:hover {
-  color: #FFB888;
+  color: #414450;
 }
 .page-cover {
   background: url("http://ayt.mx/images/persianas/sheer-elegance.jpg");
@@ -27,7 +35,7 @@ section {
   text-align: center;
 }
 footer {
-  background: #67251a;
+  background: #955251;
   color: #F5F6F7;
   padding-bottom: 110px;
   padding-top: 110px;
@@ -122,18 +130,18 @@ img {
 }
 /* Specific section styles */
 #services {
-	background-color: #5fbf54;
+	background-color: #418689;
 }
 #vision {
-	background-color: #d6ccbf;
+	background-color: #7e8f82;
 }
 #foot-bar {
   display: block;
-  background: #3A120B;
+  background: #733f3f;
   padding: 18px;
 }
 .foot-bar {
-  color: #af6c61;
+  color: #F5F6F7;
   font-size: 0.9em;
   text-align: right;
 }
