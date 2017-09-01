@@ -129,8 +129,11 @@ img {
   color: #fefefe;
 }
 /* Specific section styles */
-#services {
+#servicios {
 	background-color: #418689;
+}
+#mision {
+	background-color: #9ccbdf;
 }
 #vision {
 	background-color: #7e8f82;

@@ -9,8 +9,10 @@
   <div class="row">
     <div class="large-12 columns">
       <div class="small-8 medium-5 medium-offset-2 large-offset-2 end columns">
-        <h1 class="hero-main-header">Persianas</h1>
-        <h2 class="hero-subheader">Venta, reparación y mantenimiento</h2>
+        <h1 class="hero-main-header">{{ home.titulo }}</h1>
+				{% if home.subtitulo %}
+				<h2 class="hero-subheader">{{ home.subtitulo }}</h2>
+				{% endif %}
       </div>
     </div>
   </div>
@@ -18,25 +20,22 @@
 {% endblock %}
 
 {% block content %}
-<section id="services">
+{% if home.texto_servicios %}
+<section id="servicios">
   <div class="row">
     <article class="large-12 columns">
       <header>
-        <h1>Te presentamos nuestros servicios</h1>
+				{% if home.titulo_servicios %}
+				<h1>{{ home.titulo_servicios }}</h1>
+				{% endif %}
       </header>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
-        massa augue. Nunc quis egestas turpis, ac feugiat magna. Vivamus
-        ultricies volutpat odio quis semper. Sed in velit eu dui luctus
-        tristique volutpat nec ex. Ut auctor dictum metus nec tincidunt. Duis
-        ullamcorper bibendum neque ac venenatis. Cras pretium vel erat sed
-        suscipit. Praesent porttitor risus finibus mauris tristique sodales.
-        Aenean lacinia, ipsum eget dignissim tincidunt, urna metus lobortis
-        ante, ut vestibulum tellus neque nec velit.
+       {{ home.texto_servicios }}
       </p>
     </article>
   </div>
 </section>
+{% endif %}
 
 <section>
   <div class="row">
@@ -55,23 +54,37 @@
   </div>
 </section>
 
-<section id="vision">
+{% if home.texto_mision %}
+<section id="mision">
   <div class="row">
     <article class="large-12 columns">
       <header>
-        <h1>¿A donde queremos llegar?</h1>
+				{% if home.titulo_mision %}
+				<h1>{{ home.titulo_mision }}</h1>
+				{% endif %}
       </header>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
-        massa augue. Nunc quis egestas turpis, ac feugiat magna. Vivamus
-        ultricies volutpat odio quis semper. Sed in velit eu dui luctus
-        tristique volutpat nec ex. Ut auctor dictum metus nec tincidunt. Duis
-        ullamcorper bibendum neque ac venenatis. Cras pretium vel erat sed
-        suscipit. Praesent porttitor risus finibus mauris tristique sodales.
-        Aenean lacinia, ipsum eget dignissim tincidunt, urna metus lobortis
-        ante, ut vestibulum tellus neque nec velit.
+        {{ home.texto_mision }}
       </p>
     </article>
   </div>
 </section>
+{% endif %}
+
+{% if home.texto_vision %}
+<section id="vision">
+  <div class="row">
+    <article class="large-12 columns">
+      <header>
+				{% if home.titulo_vision %}
+				<h1>{{ home.titulo_vision }}</h1>
+				{% endif %}
+      </header>
+      <p>
+        {{ home.texto_vision }}
+      </p>
+    </article>
+  </div>
+</section>
+{% endif %}
 {% endblock %}
