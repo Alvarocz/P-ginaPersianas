@@ -16,7 +16,6 @@
   {% block stylesheets %}
   <link rel="stylesheet" href="{% static 'stylesheets/foundation.min.css' %}">
   <link rel="stylesheet" href="{% static 'stylesheets/social_foundicons.css' %}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{% static 'stylesheets/app.css' %}">
   {% endblock %}
 </head>
@@ -48,11 +47,18 @@
       <div class="small-12 medium-6 columns">
         <div class="clearfix"></div>
         <h1>Contactanos</h1>
-        <button class="button social facebook small-6 columns">
-          <a href="https://www.facebook.com/camilo.catano.505"><i class="foundicon-facebook"></i>Facebook</a>
+        <button class="button social facebook small-12 columns">
+          <a href="https://www.facebook.com/Persianas-y-Cortinas-432730740429542">
+						<i class="foundicon-facebook"></i>
+						Facebook
+					</a>
         </button>
-        <button class="button social whatsapp small-6 columns" style="background: #009846;">
-          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>3104496754</a>
+        <button class="button social whatsapp small-12 columns" style="background: rgba(0,0,0,0);">
+					<img src="{% static 'images/whatsapp-logo.png' %}" style="width: 28px;">
+          <a href="#">
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</a>
+					3104496754
         </button>
       </div>
       <div class="small-12 medium-6 columns">

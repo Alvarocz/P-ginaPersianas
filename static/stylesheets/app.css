@@ -130,13 +130,14 @@ img {
 }
 /* Specific section styles */
 #servicios {
-	background-color: #418689;
+	color: #e4e4e4;
+	background-color: #1b494b;
 }
 #mision {
 	background-color: #9ccbdf;
 }
 #vision {
-	background-color: #7e8f82;
+	background-color: #6f7b72;
 }
 #foot-bar {
   display: block;
