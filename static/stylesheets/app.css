@@ -30,8 +30,7 @@ a:hover {
   padding-top: 180px;
 }
 section {
-  padding-bottom: 140px;
-  padding-top: 140px;
+  padding: 140px 0;
   text-align: center;
 }
 footer {
@@ -45,7 +44,7 @@ section p {
   text-align: left;
 }
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 #galeria {
   padding: 0;
@@ -69,16 +68,13 @@ img {
 }
 .image-thumbnail .image-caption {
   background: rgba(22, 22, 22, .75);
-  display: none;
+  display: block;
   color: #F5F6F7;
   line-height: 38px;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
-}
-.image-thumbnail:hover .image-caption {
-  display: block;
 }
 .gallery-container {
   background-color: #2B2B2B;
@@ -104,7 +100,7 @@ img {
   }
   .gallery-container .col {
     flex: 1;
-    padding: 30px;
+    padding: 10px;
   }
   .gallery-container .image-thumbnail {
     margin-bottom: 30px;
@@ -140,6 +136,9 @@ img {
 }
 #vision {
 	background-color: #c29e4d;
+}
+#extra {
+	background-color: #51628A;
 }
 #foot-bar {
   display: block;

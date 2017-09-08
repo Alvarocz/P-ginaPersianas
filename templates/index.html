@@ -70,7 +70,7 @@
   </div>
 </section>
 {% endif %}
-
+	
 {% if home.texto_vision %}
 <section id="vision">
   <div class="row">
@@ -85,6 +85,49 @@
       </p>
     </article>
   </div>
+</section>
+{% endif %}
+
+{% if home.texto_extra %}
+<section id="extra">
+	<div class="row">
+		<article class="small-12 medium-4 columns">
+			{% if home.titulo_extra %}
+      <header>
+				<h2>{{ home.titulo_extra }}</h2>
+      </header>
+			{% endif %}
+      <p>
+       {{ home.texto_extra }}
+      </p>
+		</article>
+		<article class="small-12 medium-4 columns">
+			<img src="{% static 'images/towel.png' %}" alt="">
+		</article>
+		<article class="small-12 medium-4 columns">
+			<header>
+				<h2>Nuestra oferta</h2>
+			</header>
+			<p>
+				Por este año:
+				<br>
+				<strong>Unidad:</strong> $7000
+				<br>
+				<strong>Lleve 2 por $10000</strong>
+			</p>
+		</article>
+	</div>
+</section>
+
+<section style="padding: 50px 0;">
+	<div class="row">
+		<div class="small-12 medium-6 columns">
+			<img src="http://image.ibb.co/m2fuBv/TOALLA_1.jpg" alt="">
+		</div>
+		<div class="small-12 medium-6 columns">
+			<img src="http://image.ibb.co/m8XwPF/TOALLA_2.jpg" alt="">
+		</div>
+	</div>
 </section>
 {% endif %}
 {% endblock %}

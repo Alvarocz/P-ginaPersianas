@@ -11,6 +11,8 @@ class Informacion(models.Model):
     texto_mision = models.TextField(max_length=2000, blank=True)
     titulo_vision = models.CharField(max_length=250, blank=True)
     texto_vision = models.TextField(max_length=2000, blank=True)
+    titulo_extra = models.CharField(max_length=250, blank=True)
+    texto_extra = models.TextField(max_length=2000, blank=True)
 
 
 class Image(models.Model):
