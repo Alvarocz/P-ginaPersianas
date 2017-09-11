@@ -46,6 +46,10 @@ section p {
 p {
   font-size: 1.3em;
 }
+img {
+	display: inline-block;
+	width: 50%;
+}
 
 .button {
 	font-size: 1.2em;

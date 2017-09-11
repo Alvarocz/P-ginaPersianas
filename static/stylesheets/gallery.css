@@ -6,10 +6,6 @@
   transition: opacity .65s;
 }
 /* Smart gallery */
-img {
-	display: inline-block;
-	width: 50%;
-}
 .image-thumbnail {
   position: relative;
   margin-bottom: 20px;
