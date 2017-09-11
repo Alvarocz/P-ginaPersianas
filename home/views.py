@@ -26,3 +26,9 @@ def galeria(request):
 
 def galeria_videos(request):
     return render(request, 'videos.html')
+  
+def handler404(request):
+    return render(request, 'errors/404.html')
+  
+def handler500(request):
+    return render(request, 'errors/500.html')

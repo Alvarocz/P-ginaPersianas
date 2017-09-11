@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.conf.urls import url
+from django.conf.urls import url, handler404, handler500
 from django.contrib import admin
 from home import views as homeviews
 
@@ -11,3 +11,6 @@ urlpatterns = [
     url(r'^galeria', homeviews.galeria, name='galeria'),
     url(r'^videos', homeviews.galeria_videos, name='galeria_videos'),
 ]
+
+handler404 = homeviews.handler404
+handler500 = homeviews.handler500
