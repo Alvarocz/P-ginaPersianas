@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block title %}Persianas - Videos{% endblock %}
+
+{% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=l&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<section id="videos">
+</section>
+{% endblock %}
+
+{% block javascript %}
+{{ block.super }}
+<script src="{% static 'js/videos.js' %}"></script>
+{% endblock %}
