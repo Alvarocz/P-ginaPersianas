@@ -1,9 +1,21 @@
 {% extends 'base/base.html' %}
+{% load staticfiles %}
 {% block title %}Persianas - Galería{% endblock %}
+
+{% block stylesheets %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'stylesheets/gallery.css' %}">
+{% endblock %}
+
 
 {% block content %}
 <section id="galeria">
   <div class="gallery-container">
   </div>
 </section>
+{% endblock %}
+
+{% block javascript %}
+{{ block.super }}
+<script src="{% static 'js/gallery.js' %}"></script>
 {% endblock %}
