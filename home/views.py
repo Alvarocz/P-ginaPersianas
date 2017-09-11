@@ -6,7 +6,6 @@ from home.models import Image, Video, Informacion
 def index(request):
     home_info = Informacion.objects.first()
     if home_info:
-        print(type(home_info))
         return render(request, 'index.html', context={'home': home_info})
     else:
         return render(request, 'index.html')
