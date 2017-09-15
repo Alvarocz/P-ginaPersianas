@@ -116,7 +116,7 @@ print(STATIC_ROOT)
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 try:
     from .local_settings import *
