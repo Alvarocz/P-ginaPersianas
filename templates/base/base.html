@@ -14,13 +14,13 @@
   <title>{% block title %}Persianas{% endblock %}</title>
 
   {% block stylesheets %}
-  <!--<link rel="stylesheet" href="{% static 'stylesheets/foundation.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'stylesheets/foundation.min.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'stylesheets/social_foundicons.css' %}" type="text/css">
-  <link rel="stylesheet" href="{% static 'stylesheets/app.css' %}" type="text/css"> -->
+  <link rel="stylesheet" href="{% static 'stylesheets/app.css' %}" type="text/css">
+  <link rel="stylesheet" href="/static/stylesheets/app.css" type="text/css">
   {% endblock %}
 </head>
 <body>
-  <p>{% static 'js/app.js' %}</p>
   <header>
     {% block header %}
     <nav>
